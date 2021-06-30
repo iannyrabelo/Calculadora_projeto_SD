@@ -49,6 +49,11 @@ public class Webservice
                 String tot;        
             	
                 if(str.trim().equals("+") || str.trim().equals("-") || str.trim().equals("*") || str.trim().equals("/")) {
+                    if(str.trim().equals("/") && str3. trim().equals("0")){
+                      
+                        System.out.println("Não é possivel dividir por Zero");  
+                        continue;
+                    }
                 	
                 	tot = str1.trim()+" "+str.trim()+" "+str3.trim();                	
                 	total = tot.getBytes();
